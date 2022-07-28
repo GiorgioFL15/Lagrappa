@@ -1,0 +1,185 @@
+{% load static %}
+<!DOCTYPE html>
+</body>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:400,400i,700,700i,800,800i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-grid.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <title>Renato Lovatel - LaGrappa!</title>
+</head>
+
+<body>
+    <div class="jl-trigger-topbar"></div>
+    <div class="border-top-left"></div>
+    <div class="border-bottom-right"></div>
+
+    <div class="jl-preloader">
+        <div class="jl-preloader-inner">
+            <img src="{% static 'images/lemon-loader.svg' %}" class="jl-mar-bottom-15" />
+            <p class="jl-text-light jl-mar-top-15">Aguarde um minuto… Estou preparando uma degustação</p>
+        </div>
+    </div> 
+
+    <div class="jl-menu-overlay jl-toggle-menu"></div>
+
+    <header class="jl-topbar">
+        <div class="jl-logo jl-logo-big">
+            <img src="{% static 'images/logolagrappa.jpeg' %}" alt="Logo LaGrappa" />
+        </div>
+
+        <nav class="jl-menu">
+            <a href="{% url 'index' %}">Home</a>
+            <a href="#">Cardápio</a>
+            <a href="{% url 'sobre' %}">Sobre Nós</a>
+        </nav>
+    </header>
+
+    <button class="jl-btn-menu-mob jl-toggle-menu">
+        <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <nav class="jl-menu-mob jl-menu-is-closed">
+        <a href="#">Home</a>
+        <a href="{% url 'portfolio' %}">Cardápio</a>
+        <a href="{% url 'sobre' %}">Sobre Nós</a>
+    </nav>
+
+    <div class="jl-contact-info jl-bg-black jl-text-light">
+        <div class="jl-contact-info-inner">
+            <h2 class="jl-title jl-text-green">Contact</h2>
+            <p>renato@gmail.com</p>
+            <p>+55 (54) 9 8135 9962</p>
+        </div>
+        <div class="jl-corner">
+        </div>
+
+    </div>
+
+    <button class="jl-btn-contact">
+
+    </button>
+    
+    <div class="jl-page-wrapper">
+        <section class="container-fluid jl-section-offset-top">
+            <div class="row">
+                <div class="col-sm-10 offset-sm-1">
+                    <ul class="jl-portfolio-list">
+                        <li class="jl-portfolio-item">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-5 order-2 order-lg-1">
+                                    <div class="jl-portfolio-item-info jl-text-light">
+                                    <h1 class="jl-title jl-title-large jl-mar-bottom-15">Licor 750ml</h1>
+                                        <h1 class="animate__animated animate__bounce">R$ 70,00</h1>
+                                        <p class="jl-mar-bottom-30"><strong style="color: #2CCB69;">Sabor: </strong>Abacaxi, Ameixa, Ameixa Amarela, Butiá, Cereja e Uva</p>
+                                            <a href="https://github.com/GiorgioFL15/ProjectDance" class="jl-btn jl-btn-large jl-btn-green">Faça seu pedido!</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-6 offset-lg-1 order-1 order-lg-2">
+                                        <div class="jl-portfolio-item-thumb">
+                                            <div class="jl-portfolio-item-box d-none d-lg-block"></div>
+                                            <img src="{% static 'images/lagrappa2.jpeg' %}" alt="Startup Rocketz" title="Startup Rocketz"/>
+                                        <a href="https://github.com/GiorgioFL15/ProjectDance" class="jl-btn jl-btn-medium jl-btn-dark shake-slow shake-constant">Fale conosco!<ion-icon
+                                                name="share-alt"></ion-icon></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="jl-portfolio-item">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-5 order-2 order-lg-1">
+                                    <div class="jl-portfolio-item-info jl-text-light">
+                                    <h1 class="jl-title jl-title-large jl-mar-bottom-15">Conhaque 750ml</h1>
+                                        <h1 class="animate__animated animate__bounce">R$ 80,00</h1>
+                                        <p class="jl-mar-bottom-30"><strong style="color: #2CCB69;">Sabor: </strong>Envelhecida em Carvalho e Merlot</p>
+                                            <a href="https://github.com/GiorgioFL15/ProjectDance" class="jl-btn jl-btn-large jl-btn-green">Faça seu pedido!</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-6 offset-lg-1 order-1 order-lg-2">
+                                        <div class="jl-portfolio-item-thumb">
+                                            <div class="jl-portfolio-item-box d-none d-lg-block"></div>
+                                            <img src="{% static 'images/lagrappa2.jpeg' %}" alt="Startup Rocketz" title="Startup Rocketz"/>
+                                        <a href="https://github.com/GiorgioFL15/ProjectDance" class="jl-btn jl-btn-medium jl-btn-dark shake-slow shake-constant">Fale conosco!<ion-icon
+                                                name="share-alt"></ion-icon></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="jl-portfolio-item">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-5 order-2 order-lg-1">
+                                    <div class="jl-portfolio-item-info jl-text-light">
+                                    <h1 class="jl-title jl-title-large jl-mar-bottom-15">Grappa 750ml</h1>
+                                        <h1 class="animate__animated animate__bounce">R$ 24,00</h1>
+                                        <p class="jl-mar-bottom-30"><strong style="color: #2CCB69;">Sabor: </strong>Abacaxi, Ameixa, Ameixa de Inverno, Butiá, Funcho, Graspa, Uva e Macela</p>
+                                            <a href="https://github.com/GiorgioFL15/ProjectDance" class="jl-btn jl-btn-large jl-btn-green">Faça seu pedido!</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-6 offset-lg-1 order-1 order-lg-2">
+                                        <div class="jl-portfolio-item-thumb">
+                                            <div class="jl-portfolio-item-box d-none d-lg-block"></div>
+                                            <img src="{% static 'images/lagrappa4.jpeg' %}" alt="Startup Rocketz" title="Startup Rocketz"/>
+                                        <a href="https://github.com/GiorgioFL15/ProjectDance" class="jl-btn jl-btn-medium jl-btn-dark shake-slow shake-constant">Fale conosco!<ion-icon
+                                                name="share-alt"></ion-icon></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="jl-portfolio-item">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-5 order-2 order-lg-1">
+                                    <div class="jl-portfolio-item-info jl-text-light">
+                                    <h1 class="jl-title jl-title-large jl-mar-bottom-15">Licor 275ml</h1>
+                                        <h1 class="animate__animated animate__bounce">R$ 13,00</h1>
+                                        <p class="jl-mar-bottom-30"><strong style="color: #2CCB69;">Sabor: </strong>Abacaxi, Ameixa, Ameixa Amarela, Butiá e Uva</p>
+                                            <a href="https://github.com/GiorgioFL15/ProjectDance" class="jl-btn jl-btn-large jl-btn-green">Faça seu pedido!</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-6 offset-lg-1 order-1 order-lg-2">
+                                        <div class="jl-portfolio-item-thumb">
+                                            <div class="jl-portfolio-item-box d-none d-lg-block"></div>
+                                            <img src="{% static 'images/lagrappa3.jpeg' %}" alt="Startup Rocketz" title="Startup Rocketz"/>
+                                        <a href="https://github.com/GiorgioFL15/ProjectDance" class="jl-btn jl-btn-medium jl-btn-dark shake-slow shake-constant">Fale conosco!<ion-icon
+                                                name="share-alt"></ion-icon></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="jl-portfolio-item">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-5 order-2 order-lg-1">
+                                    <div class="jl-portfolio-item-info jl-text-light">
+                                    <h1 class="jl-title jl-title-large jl-mar-bottom-15">Grappa 2L</h1>
+                                        <h1 class="animate__animated animate__bounce">R$ 35,00</h1>
+                                        <p class="jl-mar-bottom-30"><strong style="color: #2CCB69;">Sabor: </strong>Abacaxi, Ameixa, Ameixa de Inverno, Butiá, Funcho, Graspa, Uva e Macela</p>
+                                            <a href="https://github.com/GiorgioFL15/ProjectDance" class="jl-btn jl-btn-large jl-btn-green">Faça seu pedido!</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-6 offset-lg-1 order-1 order-lg-2">
+                                        <div class="jl-portfolio-item-thumb">
+                                            <div class="jl-portfolio-item-box d-none d-lg-block"></div>
+                                            <img src="{% static 'images/lagrappa1.jpeg' %}" alt="Startup Rocketz" title="Startup Rocketz"/>
+                                        <a href="https://github.com/GiorgioFL15/ProjectDance" class="jl-btn jl-btn-medium jl-btn-dark shake-slow shake-constant">Fale conosco!<ion-icon
+                                                name="share-alt"></ion-icon></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

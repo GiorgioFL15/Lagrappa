@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap%27');*
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap%27');
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+*
 
 {
     margin: 0;
@@ -141,6 +143,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     left: 0;
     top: 130px;
     background:transparent;
+}
+
+span.material-symbols-outlined.card {
+    font-size: 60px;
+    margin-top: 20px;
+    padding: 5px;
 }
 
 .border-top-left, .border-bottom-right  {
@@ -507,10 +515,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     .jl-home-presentation {
         background-image:linear-gradient(rgba(0, 0, 0, 0.657), rgba(0, 0, 0, 0.657)), url('../images/logolagrappa.jpeg');
         background-repeat: no-repeat;
-        background-position: 85%;
+        background-position: 50%;
         position: relative;
         background-size: 130% auto;
-    }   
+    }
     
     .jl-home-presentation h1 {
         margin-top: 60px;
@@ -522,6 +530,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     }
 
     .jl-home-presentation .jl-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .jl-home-presentation2 {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.657), rgba(0, 0, 0, 0.657)), url('../images/logolagrappa.jpeg');
+        background-repeat: no-repeat;
+        background-position: 85%;
+        position: relative;
+        background-size: 130% auto;
+    }
+    
+    .jl-home-presentation2 h1 {
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .jl-home-presentation2 p {
+        text-align: center;
+    }
+
+    .jl-home-presentation2 .jl-btn {
         margin-left: auto;
         margin-right: auto;
     }
@@ -605,6 +635,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
          position: absolute;
          top: 3px;
          left: 0;
+         z-index: -999;
      }
 
      .jl-navigator-counter span {
@@ -1093,6 +1124,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     }
 }
 
+@media screen and (max-width: 750px){
+    .jl-home-presentation2 {
+        background-image: none;
+    }
+}
+
 
 
 @media screen and (min-width: 400px){
@@ -1126,6 +1163,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 
 @media screen and (min-width: 768px){
     .jl-home-presentation{
+        background-size: 80%;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .jl-home-presentation2{
+        background-size: 100%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .jl-home-presentation2{
         background-size: 80%;
     }
 
@@ -1210,6 +1259,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     }
 
     .jl-home-presentation .jl-btn {
+        margin-left: 0;
+    }
+
+    .jl-home-presentation2 {
+        background-size: auto;
+    } 
+
+    .jl-home-presentation2 h1 {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .jl-home-presentation2 p {
+        text-align: right;
+    }
+
+    .jl-home-presentation2 .jl-btn {
         margin-left: 0;
     }
 
@@ -1300,7 +1366,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
         font-size: 100px;
     }
     .jl-navigator-counter:before {
-       width: 30px; 
+       width: 30px;
     }
 
     .jl-items-next-prev {
@@ -1796,4 +1862,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 /* PLUGINS OVERWRITE */
 [data-aos=flip-left] {
     transform: perspective(2500px) rotateY(-90deg);
+}
+
+/* Global */
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }

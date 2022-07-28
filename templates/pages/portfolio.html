@@ -1,8 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-</body>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +9,11 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-grid.min.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
-    <title>Renato Lovatel - LaGrappa!</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/logolagrappa.jpeg' %}">
+    <title>Renato Lovatel - LaGrappa! </title>
 </head>
 
 <body>
@@ -32,12 +32,12 @@
 
     <header class="jl-topbar">
         <div class="jl-logo jl-logo-big">
-            <img src="{% static 'images/logolagrappa.jpeg' %}" alt="Logo LaGrappa" />
+            <span class="material-symbols-outlined card">liquor</span>
         </div>
 
         <nav class="jl-menu">
             <a href="{% url 'index' %}">Home</a>
-            <a href="#">Cardápio</a>
+            <a href="#">Catálogo</a>
             <a href="{% url 'sobre' %}">Sobre Nós</a>
         </nav>
     </header>
@@ -48,14 +48,14 @@
 
     <nav class="jl-menu-mob jl-menu-is-closed">
         <a href="#">Home</a>
-        <a href="{% url 'portfolio' %}">Cardápio</a>
+        <a href="{% url 'portfolio' %}">Catálogo</a>
         <a href="{% url 'sobre' %}">Sobre Nós</a>
     </nav>
 
     <div class="jl-contact-info jl-bg-black jl-text-light">
         <div class="jl-contact-info-inner">
-            <h2 class="jl-title jl-text-green">Contact</h2>
-            <p>renato@gmail.com</p>
+            <h2 class="jl-title jl-text-green">Contato</h2>
+            <p>renatolagrappa@gmail.com</p>
             <p>+55 (54) 9 8135 9962</p>
         </div>
         <div class="jl-corner">
@@ -98,14 +98,14 @@
                                     <div class="jl-portfolio-item-info jl-text-light">
                                     <h1 class="jl-title jl-title-large jl-mar-bottom-15">Conhaque 750ml</h1>
                                         <h1 class="animate__animated animate__bounce">R$ 80,00</h1>
-                                        <p class="jl-mar-bottom-30"><strong style="color: #2CCB69;">Sabor: </strong>Envelhecida em Carvalho e Merlot</p>
+                                        <p class="jl-mar-bottom-30"><strong style="color: #2CCB69;">Sabor: </strong>Envelhecido em Carvalho e Merlot</p>
                                             <a href="https://github.com/GiorgioFL15/ProjectDance" class="jl-btn jl-btn-large jl-btn-green">Faça seu pedido!</a>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-lg-6 offset-lg-1 order-1 order-lg-2">
                                         <div class="jl-portfolio-item-thumb">
                                             <div class="jl-portfolio-item-box d-none d-lg-block"></div>
-                                            <img src="{% static 'images/lagrappa2.jpeg' %}" alt="Startup Rocketz" title="Startup Rocketz"/>
+                                            <img src="{% static 'images/lagrappa5.jpeg' %}" alt="Startup Rocketz" title="Startup Rocketz"/>
                                         <a href="https://github.com/GiorgioFL15/ProjectDance" class="jl-btn jl-btn-medium jl-btn-dark shake-slow shake-constant">Fale conosco!<ion-icon
                                                 name="share-alt"></ion-icon></a>
                                     </div>
@@ -178,6 +178,8 @@
         </section>
     </div>
 
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
     <script src="{% static 'js/main.js' %}"></script>
 
 </body>
